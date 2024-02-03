@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".WriteActivity">
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/rounded_border_sky"
+        android:hint="제목"
+        android:layout_margin="10sp"
+        android:padding="10sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_marginBottom="10sp"
+        android:background="@drawable/rounded_border_sky"
+        android:layout_margin="10sp"
+        android:hint="내용"
+        android:padding="5sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_margin="10sp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/upload"
+            android:id="@+id/imageView"
+
+            />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/Wbtn_radioGroup"
+        android:background="#2ED5FF"
+        android:padding="5sp"
+        android:layout_marginBottom="10sp"
+        >
+        <RadioButton
+            android:id="@+id/Wbtn_extraction"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/rounded_border_sky"
+
+            android:text="발치 " />
+
+        <RadioButton
+            android:id="@+id/Wbtn_correction"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/rounded_border_sky"
+
+            android:text="교정" />
+
+        <RadioButton
+            android:id="@+id/Wbtn_scaling"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border_sky"
+
+            android:text="스케일링 " />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/Wbtn_upload"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
+            android:backgroundTint="#2ED5FF"
+            android:text="게시글 업로드" />
+
+        <Button
+            android:id="@+id/Wbtn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:backgroundTint="#2ED5FF"
+            android:text="취소" />
+    </LinearLayout>
+</LinearLayout>

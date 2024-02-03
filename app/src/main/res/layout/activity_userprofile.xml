@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50sp"
+        android:layout_margin="10dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/H_img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="16dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:shape="rectangle"
+            android:src="@drawable/myprofile2" />
+
+        <TextView
+            android:id="@+id/H_tVID"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="ID"
+            android:textSize="40sp"
+            android:translationX="33dp"
+            android:translationY="10dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_border_rectang"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/H_tVTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="전화번호:"
+
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/H_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:gravity="center_vertical"
+            android:text="성별:"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/H_tVBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:gravity="center_vertical"
+            android:text="생년월일:"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/H_tVemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:gravity="center_vertical"
+            android:text="이메일:"
+            android:textSize="15dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_border_rectang"
+        android:layout_margin="5dp"
+        >
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn_authorize"
+            android:backgroundTint="#2ED5FF"
+            android:text="의사 인증"
+
+            />
+
+        <TextView
+            android:layout_weight="8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="의사등록번호:"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="155dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_border_rectang"
+        android:layout_margin="5dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내가 작성한 글"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:id="@+id/my_list"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_profile_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="돌아가기"
+        android:backgroundTint="#2ED5FF"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#2ED5FF"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_write"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="5sp"
+            android:background="#2ED5FF"
+            android:src="@drawable/write" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/postlist"
+            android:layout_width="313dp"
+            android:layout_height="485dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="50dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </FrameLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        android:background="#2ED5FF"
+        >
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_home"
+            android:layout_marginRight="10sp"
+            android:text="홈화면"
+            android:background="#2ED5FF"
+            android:src="@drawable/home"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_chat"
+            android:layout_marginRight="10sp"
+            android:text="Chat"
+            android:background="#2ED5FF"
+            android:src="@drawable/chat"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_reservation"
+            android:layout_marginRight="10sp"
+            android:text="REZ"
+            android:background="#2ED5FF"
+            android:src="@drawable/reservation"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_myprofile"
+            android:layout_marginRight="10sp"
+            android:text="내 정보"
+            android:background="#2ED5FF"
+            android:src="@drawable/myproflile"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
